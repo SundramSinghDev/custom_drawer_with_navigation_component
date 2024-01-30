@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright/**
+  ~          * CedCommerce
+  ~           *
+  ~           * NOTICE OF LICENSE
+  ~           *
+  ~           * This source file is subject to the End User License Agreement (EULA)
+  ~           * that is bundled with this package in the file LICENSE.txt.
+  ~           * It is also available through the world-wide-web at this URL:
+  ~           * http://cedcommerce.com/license-agreement.txt
+  ~           *
+  ~           * @category  Ced
+  ~           * @package   MageNative
+  ~           * @author    CedCommerce Core Team <connect@cedcommerce.com >
+  ~           * @copyright Copyright CEDCOMMERCE (http://cedcommerce.com/)
+  ~           * @license      http://cedcommerce.com/license-agreement.txt
+  ~           */
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/MageNative_subrelat"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/MageNative_mainsequence"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/MageNative_upperline"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:background="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/MageNative_approvedtag"
+                android:layout_width="4dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/ic_circle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/MageNative_bottomline"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:background="@color/black" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/MageNative_lblListItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/MageNative_mainsequence"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/MageNative_lblListItemid"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/MageNative_mainsequence"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</layout>
